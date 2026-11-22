@@ -1,0 +1,71 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Credentials & secrets — never commit these
+*.json
+secrets/
+service_account*.json
+*credentials*.json
+*key*.json
+# Deployer IAM policy template (placeholders only, no account data)
+!docs/deployer-policy.json
+
+*.pem
+*.key
+*.p12
+*.secret
+
+# Environment files (only .env.example is committed)
+.env
+.env.*
+!.env.example
+
+# Claude Code (project notes, settings, progress)
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+
+# AgentCore starter-toolkit local config (may hold account IDs / ARNs)
+.bedrock_agentcore/
+.bedrock_agentcore.yaml
+
+# AWS SAM build artifacts
+.aws-sam/
+
+# Terraform — state holds plaintext secrets; tfvars holds secret values
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/terraform.tfvars
+terraform/*.auto.tfvars
+# Saved plans (terraform plan -out) hold plaintext secrets too
+terraform/tfplan
+terraform/*.tfplan
+terraform/build/
+terraform/*.zip
+crash.log
+# Keep terraform/.terraform.lock.hcl tracked (pins provider versions)
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+/article

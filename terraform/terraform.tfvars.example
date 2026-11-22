@@ -1,0 +1,24 @@
+# Copy to terraform.tfvars (git-ignored) and fill in your values.
+
+aws_region         = "your-aws-region"
+google_sheet_id    = "your_sheet_id_here"
+google_sa_key_path = "/path/to/service-account-key.json"
+ses_sender         = "you@yourdomain.com"
+ses_recipient      = "you@example.com"
+
+# Optional (defaults shown)
+# project_name       = "reminder-agent"
+# environment        = "dev"
+# bedrock_model_id   = "amazon.nova-pro-v1:0"
+# google_sheet_range = "Active!A1:Z1000"
+# timezone           = "Asia/Dubai"
+# llm_timeout_seconds = 30
+# max_retries         = 3
+# schedule_expression = "cron(0 16 * * ? *)"
+# schedule_enabled    = true
+# enable_transaction_search = true
+# alert_email         = ""   # empty = ses_recipient
+# enable_online_evaluation = true
+# evaluators = ["Builtin.GoalSuccessRate", "Builtin.InstructionFollowing",
+#   "Builtin.Faithfulness", "Builtin.ToolSelectionAccuracy",
+#   "Builtin.ToolParameterAccuracy"]

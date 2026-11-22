@@ -1,0 +1,8 @@
+# Runtime dependencies for the AgentCore Runtime container.
+# Keep in sync with pyproject.toml.
+strands-agents
+bedrock-agentcore
+pydantic>=2.0
+google-auth>=2.29
+google-api-python-client>=2.130
+boto3>=1.34
